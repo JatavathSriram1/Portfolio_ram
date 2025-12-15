@@ -37,7 +37,6 @@ const SECTIONS: NavItem[] = [
 export default function App() {
   const [activeSection, setActiveSection] = useState<SectionId>('about');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [imgError, setImgError] = useState(false);
 
   const renderContent = () => {
     switch (activeSection) {
@@ -337,19 +336,10 @@ export default function App() {
             {/* Avatar */}
             <div className="relative group shrink-0">
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full blur opacity-40 group-hover:opacity-60 transition-opacity"></div>
-              <div className="relative w-32 h-32 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-white overflow-hidden">
-                {CANDIDATE_DATA.avatar && !imgError ? (
-                  <img 
-                    src={CANDIDATE_DATA.avatar} 
-                    alt={CANDIDATE_DATA.name} 
-                    className="w-full h-full object-cover"
-                    onError={() => setImgError(true)}
-                  />
-                ) : (
-                  <span className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
-                    {CANDIDATE_DATA.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                )}
+              <div className="relative w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-white to-gray-50 rounded-full flex items-center justify-center text-4xl font-bold shadow-lg border-4 border-white">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+                  {CANDIDATE_DATA.name.split(' ').map(n => n[0]).join('')}
+                </span>
               </div>
             </div>
 

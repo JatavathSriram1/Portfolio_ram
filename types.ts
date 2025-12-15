@@ -49,7 +49,6 @@ export interface CandidateProfile {
   address: string;
   linkedin: string;
   github: string;
-  avatar?: string;
   summary: string;
   experience: Experience[];
   education: Education[];

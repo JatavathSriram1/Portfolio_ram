@@ -9,7 +9,6 @@ export const CANDIDATE_DATA: CandidateProfile = {
   address: "Rathya naik thanda, Gottimukkala, Devarakonda, Telangana 508248",
   linkedin: "https://www.linkedin.com/in/jatavath-sriram-5-year-idd-mathematical-sciences-80500322a/",
   github: "https://github.com/JatavathSriram1",
-  avatar: "https://github.com/JatavathSriram1.png",
   summary: "Integrated Dual Degree student in Mathematical Sciences at IIT (BHU) Varanasi with a strong foundation in Data Science, Machine Learning, and Optimization. Passionate about leveraging advanced mathematical techniques and GenAI for solving real-world problems. Experienced in data analytics, computer vision, and creating efficient algorithms with practical industry applications.",
   
   experience: [
